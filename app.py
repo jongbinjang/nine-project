@@ -16,7 +16,8 @@ SECRET_KEY = 'SPARTA'
 # # local 서버에서 사용
 # client = MongoClient('localhost', 27017)
 # ec2 등록 시 사용
-client = MongoClient('mongodb://test:test@localhost/?authSource=admin', 27017)
+# client = MongoClient('mongodb://test:test@localhost/?authSource=admin', 27017)
+client = MongoClient('mongodb://localhost/?authSource=admin', 27017)
 db = client.week1_project
 
 # 메인페이지
